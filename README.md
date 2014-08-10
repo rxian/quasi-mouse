@@ -1,7 +1,7 @@
 Quasi-Mouse
 ===========
 
-##### Summary
+#### Summary
 
 Created on August 10, 2014
 
@@ -11,13 +11,17 @@ This repository contains the source code for my EE 47 final project, a great por
 
 The product is a iPhone remote-controlled car via Bluetooth LE 4.0, with the ability to play songs. 
 
-##### Files
+---
+
+#### Files
 
 *~/arduino_files/*  contains the files for programming the Arduino
 
 *~/iphoneapp_files/*  contains the files for the iPhone app
 
-##### Components
+---
+
+#### Components
 
 The physical product is made up of different chips and components, as listed below (Libraries are also included with the files):
 + Arduino Micro from Arduino

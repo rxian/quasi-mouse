@@ -13,7 +13,10 @@ The product is a iPhone remote-controlled car via Bluetooth LE 4.0, with the abi
 + WTV020SD Audio-Sound Breakout from Sparkfun
 	- Library: http://forum.arduino.cc/index.php?&topic=117009/
 + MicroSD Card from Transcend
-+ N-Channel MOSFET from Sparkfun
++ 6V Voltage Regulator from Jameco
++ 8.2 and 10 MOhm resistors
 
-_/arduino_files/_  contains the files for programming the Arduino
-_/iphoneapp_files/_  contains the files for the iPhone app
+
+*~/arduino_files/*  contains the files for programming the Arduino
+
+*~/iphoneapp_files/*  contains the files for the iPhone app

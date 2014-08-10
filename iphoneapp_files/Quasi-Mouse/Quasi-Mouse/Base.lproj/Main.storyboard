@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="QMViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTh-4Q-bW6">
+                                <rect key="frame" x="182" y="213" width="255" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">log log
+log</string>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="V:0.5 H:0.5" translatesAutoresizingMaskIntoConstraints="NO" id="w7b-hu-fpf">
+                                <rect key="frame" x="182" y="198" width="255" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="11"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0i-ZI-oG7" userLabel="Connect Button">
+                                <rect key="frame" x="495" y="254" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Connect" image="u_link.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="p_log.png"/>
+                                <state key="highlighted" image="p_link.png"/>
+                                <connections>
+                                    <action selector="connectEvent:" destination="x5A-6p-PRh" eventType="touchUpInside" id="eqg-Dz-Das"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1g-Ab-Hn9" userLabel="Sound Button">
+                                <rect key="frame" x="418" y="54" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="buzz.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="h_buzz.png"/>
+                                <connections>
+                                    <action selector="soundEvent:" destination="x5A-6p-PRh" eventType="touchUpInside" id="agG-51-QbF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5h1-W5-3Rw" userLabel="Sound Button">
+                                <rect key="frame" x="355" y="54" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="music.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="h_music.png"/>
+                                <connections>
+                                    <action selector="musicEvent:" destination="x5A-6p-PRh" eventType="touchUpInside" id="x01-dJ-ZKt"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="das" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qqf-nZ-hAZ" userLabel="Horizontal Slider">
+                                <rect key="frame" x="243" y="145" width="210" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <connections>
+                                    <action selector="resetSlider:" destination="x5A-6p-PRh" eventType="touchUpOutside" id="SdQ-g6-vJK"/>
+                                    <action selector="resetSlider:" destination="x5A-6p-PRh" eventType="touchUpInside" id="agF-Xd-htg"/>
+                                    <action selector="slideEvent:" destination="x5A-6p-PRh" eventType="valueChanged" id="q0L-qY-5j8"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="c1b-WQ-SWb" userLabel="Vertical Slider">
+                                <rect key="frame" x="60" y="145" width="210" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="resetSlider:" destination="x5A-6p-PRh" eventType="touchUpOutside" id="Smb-97-hpC"/>
+                                    <action selector="resetSlider:" destination="x5A-6p-PRh" eventType="touchUpInside" id="Ujz-D0-ehF"/>
+                                    <action selector="slideEvent:" destination="x5A-6p-PRh" eventType="valueChanged" id="Yl1-xm-Dy7"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lks-G6-5CJ">
+                                <rect key="frame" x="444" y="254" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="p_log.png"/>
+                                <connections>
+                                    <action selector="displayLog:" destination="x5A-6p-PRh" eventType="touchUpInside" id="261-Vk-FZC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="indicator_n.png" translatesAutoresizingMaskIntoConstraints="NO" id="EOa-TV-LLC">
+                                <rect key="frame" x="20" y="270" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvx-lr-a9P">
+                                <rect key="frame" x="-57" y="232" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BATT." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvz-Ua-u5o">
+                                <rect key="frame" x="25" y="254" width="29" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="14"/>
+                                <color key="textColor" red="0.49730383831521741" green="0.49730383831521741" blue="0.49730383831521741" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="volume_base.png" translatesAutoresizingMaskIntoConstraints="NO" id="3dV-oi-hR5">
+                                <rect key="frame" x="493" y="54" width="53" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="volume_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="c6u-kk-CMc">
+                                <rect key="frame" x="529" y="57" width="15" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRd-mT-JAW">
+                                <rect key="frame" x="500" y="59" width="30" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="volume_up.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="volume_up_p.png"/>
+                                <connections>
+                                    <action selector="volumeUpEvent:" destination="x5A-6p-PRh" eventType="touchUpInside" id="sBt-t9-O9W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfZ-ji-fGk">
+                                <rect key="frame" x="500" y="89" width="30" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="volume_down.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="volume_down_p.png"/>
+                                <connections>
+                                    <action selector="volumeDownEvent:" destination="x5A-6p-PRh" eventType="touchUpInside" id="MZ8-54-5b2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="batteryIndicator" destination="EOa-TV-LLC" id="9lL-ds-7iu"/>
+                        <outlet property="connectButton" destination="c0i-ZI-oG7" id="BTh-7h-pVS"/>
+                        <outlet property="horizontalSlider" destination="qqf-nZ-hAZ" id="ExD-Uy-kB1"/>
+                        <outlet property="levelOutputTextView" destination="w7b-hu-fpf" id="C21-2K-SgL"/>
+                        <outlet property="logButton" destination="Lks-G6-5CJ" id="T7H-i8-Qnk"/>
+                        <outlet property="outputTextView" destination="ZTh-4Q-bW6" id="yrM-Mj-ewI"/>
+                        <outlet property="soundButton" destination="Q1g-Ab-Hn9" id="zsF-OZ-PjH"/>
+                        <outlet property="verticalSlider" destination="c1b-WQ-SWb" id="UnQ-4F-Hzr"/>
+                        <outlet property="volumeIndicator" destination="c6u-kk-CMc" id="VmP-3A-5hW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="buzz.png" width="104" height="104"/>
+        <image name="h_buzz.png" width="104" height="104"/>
+        <image name="h_music.png" width="104" height="104"/>
+        <image name="indicator_n.png" width="78" height="59"/>
+        <image name="music.png" width="104" height="104"/>
+        <image name="p_link.png" width="196" height="196"/>
+        <image name="p_log.png" width="196" height="196"/>
+        <image name="u_link.png" width="196" height="196"/>
+        <image name="volume_3.png" width="30" height="139"/>
+        <image name="volume_base.png" width="102" height="154"/>
+        <image name="volume_down.png" width="60" height="72"/>
+        <image name="volume_down_p.png" width="60" height="72"/>
+        <image name="volume_up.png" width="60" height="70"/>
+        <image name="volume_up_p.png" width="60" height="70"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

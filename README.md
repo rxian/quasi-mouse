@@ -5,11 +5,19 @@ Created on August 10, 2014
 
 Course page: http://pressplay.pbworks.com/
 
----
-
 This repository contains the source code for my EE 47 final project, a great portion of the codes are directly copied from available example codes or libraries provided by chip manufacturers. Not for commercial use.
 
-The product is a iPhone remote-controlled car via Bluetooth LE 4.0, with the ability to play songs. The physical product is made up of different chips and components, as listed below (Libraries are also included with the files):
+The product is a iPhone remote-controlled car via Bluetooth LE 4.0, with the ability to play songs. 
+
+---
+
+*~/arduino_files/*  contains the files for programming the Arduino
+
+*~/iphoneapp_files/*  contains the files for the iPhone app
+
+---
+
+The physical product is made up of different chips and components, as listed below (Libraries are also included with the files):
 + Arduino Micro from Arduino
 + nRF8001 Breakout v1.0 from Adafruit
 	- Library: http://github.com/adafruit/Adafruit_nRF8001/
@@ -19,9 +27,3 @@ The product is a iPhone remote-controlled car via Bluetooth LE 4.0, with the abi
 + MicroSD Card from Transcend
 + 6V Voltage Regulator from Jameco
 + 8.2 and 10 MOhm resistors
-
----
-
-*~/arduino_files/*  contains the files for programming the Arduino
-
-*~/iphoneapp_files/*  contains the files for the iPhone app

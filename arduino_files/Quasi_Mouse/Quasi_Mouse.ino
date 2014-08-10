@@ -18,7 +18,7 @@ Purchased ICs as follows:
   * WTV020SD Audio-Sound Breakout from Sparkfun
     - Library: http://forum.arduino.cc/index.php?&topic=117009/
   * MicroSD Card from Transcend
-  * N-Channel MOSFET from Sparkfun
+  * 6V Voltage Regulator from Jameco
   ^ Libraries are also included with the files 
 
 Arduino is connected as below:

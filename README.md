@@ -19,7 +19,7 @@ The product is a iPhone remote-controlled car via Bluetooth LE 4.0, with the abi
 
 *~/iphoneapp_files/*  contains the files for the iPhone app
 
-*~/arduino_files/*  contains the vector drawings for the housing (laser cut)
+*~/housing_vector/*  contains the vector drawings for the housing (laser cut)
 
 ---
 

@@ -310,10 +310,11 @@ float lastVerticalValue = 0.5;
 float lastHorizontalValue = 0.5;
 - (IBAction)slideEvent:(id)sender
 {
-    if (lastHorizontalValue != horizontalSlider.value || lastVerticalValue != verticalSlider.value) {  // avoid sending the same value
-        lastHorizontalValue = horizontalSlider.value;
-        lastVerticalValue = verticalSlider.value;
-        NSArray *motorSpeeds = [self calculateMotorSpeed:verticalSlider.value :horizontalSlider.value];
+    if (lastHorizontalValue != (int)(horizontalSlider.value * 10) || lastVerticalValue != (int)(verticalSlider.value * 10)) {  // avoid sending the same value
+        lastHorizontalValue = (int)(horizontalSlider.value * 10);
+        lastVerticalValue = (int)(verticalSlider.value * 10);
+        NSArray *motorSpeeds = [self calculateMotorSpeed:(10-lastVerticalValue)/10 :(lastHorizontalValue)/10];  // inversed because of installation problem
+//        NSArray *motorSpeeds = [self calculateMotorSpeed:lastVerticalValue/10 :lastHorizontalValue/10];
         [self sendSignal:[NSString stringWithFormat:@"A%@", [motorSpeeds objectAtIndex:0]]];
         [self sendSignal:[NSString stringWithFormat:@"B%@", [motorSpeeds objectAtIndex:1]]];
         [self postToOutput:@""];

@@ -10,7 +10,7 @@ For EE 47 Final Project
 This Arduino file is for controlling a remote car from an iPhone 5s
 via Bluetooth Low Energy (4.0) protocol.
 
-Purchased ICs as follows:
+Purchased ICs as follow:
   * Arduino Micro from Arduino
   * nRF8001 Breakout v1.0 from Adafruit
     - Library: http://github.com/adafruit/Adafruit_nRF8001/
